@@ -8,14 +8,16 @@ def print_animal(animal):
     print(f"Name: {animal.name}")
     print(f"Species: {animal.species}")
     print(f"Date Added: {animal.date_added}")
+    if hasattr(animal, "shift"):
+        print(f"Shift: {animal.shift}")
     print()
 
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama")
-donkey_doo = Donkey("Donkey Doo Doo", "some kinda donkey")
-billy = Goat("Billy The Goat", "Goat")
-porky_porkstein = Pig("Porky Porkstein", "Bacon Pig")
-domination = Horse("The Dominator", "Pure Bred Race Horse")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "midday")
+donkey_doo = Donkey("Donkey Doo Doo", "some kinda donkey", "morning")
+billy = Goat("Billy The Goat", "Goat", "midday")
+porky_porkstein = Pig("Porky Porkstein", "Bacon Pig", "midday")
+domination = Horse("The Dominator", "Pure Bred Race Horse", "morning")
 
 bitey = Copperhead("Bitey the Copperhead", "North American Copperhead Snake")
 eatsrats = RatSnake("Rat Elminator", "Rat Snake")
