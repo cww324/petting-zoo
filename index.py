@@ -13,23 +13,27 @@ def print_animal(animal):
     print()
 
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "midday")
-donkey_doo = Donkey("Donkey Doo Doo", "some kinda donkey", "morning")
-billy = Goat("Billy The Goat", "Goat", "midday")
-porky_porkstein = Pig("Porky Porkstein", "Bacon Pig", "midday")
-domination = Horse("The Dominator", "Pure Bred Race Horse", "morning")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "midday", "Llama Chow")
+donkey_doo = Donkey("Donkey Doo Doo", "some kinda donkey", "morning", "Donkey Food")
+billy = Goat("Billy The Goat", "Goat", "midday", "Hay and stuff")
+porky_porkstein = Pig("Porky Porkstein", "Bacon Pig", "midday", "hay and mud")
+domination = Horse(
+    "The Dominator", "Pure Bred Race Horse", "morning", "RaceHorse Alpha Food mix"
+)
 
-bitey = Copperhead("Bitey the Copperhead", "North American Copperhead Snake")
-eatsrats = RatSnake("Rat Elminator", "Rat Snake")
-albertking = KingSnake("Albert the King of All Snakes", "King Snake")
-olbob = WaterMoccasin("Ole' Bob The Sailor", "Water Moccasin")
-tightgrip = BoaConstrictor("Tight Grip McBoa", "Boa Constrictor")
+bitey = Copperhead(
+    "Bitey the Copperhead", "North American Copperhead Snake", "snake food"
+)
+eatsrats = RatSnake("Rat Elminator", "Rat Snake", "rats")
+albertking = KingSnake("Albert the King of All Snakes", "King Snake", "snake food")
+olbob = WaterMoccasin("Ole' Bob The Sailor", "Water Moccasin", "snake food")
+tightgrip = BoaConstrictor("Tight Grip McBoa", "Boa Constrictor", "snake food")
 
-chuck = Mallard("Chuck the Mallard", "Mallard Duck")
-bob = Goldfish("Bob the GoldFish", "Common GoldFish")
-george = Turtle("Lonesome George", "Galapagos Turtle")
-kermit = Frog("Kermit the Frog", "Frog made from foam and magic")
-koie = Koi("Koie the Koi Fish", "Eastern Chinese Koi Fish")
+chuck = Mallard("Chuck the Mallard", "Mallard Duck", "rice")
+bob = Goldfish("Bob the GoldFish", "Common GoldFish", "Goldfish Nuggets")
+george = Turtle("Lonesome George", "Galapagos Turtle", "Turtle Nuggets")
+kermit = Frog("Kermit the Frog", "Frog made from foam and magic", "Magical Fruit")
+koie = Koi("Koie the Koi Fish", "Eastern Chinese Koi Fish", "Goldfish Nuggets")
 
 
 print_animal(miss_fuzz)
@@ -47,5 +51,10 @@ print_animal(bob)
 print_animal(george)
 print_animal(kermit)
 print_animal(koie)
+
+print(miss_fuzz)
+miss_fuzz.feed()
+domination.feed()
+porky_porkstein.feed()
 
 # End-of-file (EOF)
